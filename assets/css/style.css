@@ -1,0 +1,269 @@
+/*================================================================================
+	Item Name: Stack - Responsive Admin Theme
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background : none;
+}
+
+
+.btn-show {
+    font-size: 18px;
+    color: #3C8DBC !important;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.btn-edit {
+    font-size: 18px;
+    color: #e3a345 !important;
+    font-weight: 600;
+}
+
+.btn-del {
+    background: transparent;
+    border: 0;
+    color: red !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn_area {
+
+    margin-left: 10px;
+    padding: 0 11px 10px 11px;
+    border-bottom: 1px solid #f4f4f4;
+    overflow: hidden;
+}
+
+
+
+/* Multiple File Upload */
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.thumb {
+    height: 80px;
+    width: 100px;
+    border: 1px solid #000;
+}
+
+ul.thumb-Images li {
+    width: 120px;
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    height: 120px;
+}
+
+.img-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+.img-wrap .close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    background-color: #d0e5f5;
+    padding: 5px 2px 2px;
+    color: #000;
+    font-weight: bolder;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 23px;
+    line-height: 10px;
+    border-radius: 50%;
+}
+
+.img-wrap:hover .close {
+    opacity: 1;
+    background-color: #ff0000;
+}
+
+.FileNameCaptionStyle {
+    font-size: 12px;
+}
+
+
+.form-group output {
+    margin-left: -40px;
+}
+
+.box-shadow-2 .card {
+    border-radius: 10px;
+}
+
+.header-navbar .navbar-header .navbar-brand .brand-text {
+    padding-left: 5px !important;
+    /*letter-spacing: unset;*/
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*.brand-logo {
+    width: 32px;
+    height: 27px;
+}*/
+
+.v-align-middle {
+    vertical-align: middle
+}
+
+td p {
+    margin-block-start: unset;
+    margin-block-end: unset;
+}
+
+.custom-file-label {
+    border: 1px solid #00b5b8 !important;
+}
+
+.main-menu.menu-dark ul.menu-popout li.active > a, .main-menu.menu-dark ul.menu-popout li:hover > a, .main-menu.menu-dark ul.menu-popout li.open > a {
+    background: #e3a345 !important;
+}
+
+.nav.nav-tabs.nav-top-border .nav-item a {
+    color: #00B5B8;
+}
+
+.card-header {
+    padding: 1.5rem 1.5rem 0 !important;
+}
+
+.main-menu.menu-dark .navigation > li.open ul li.active > a {
+    padding-left: 45px !important;
+}
+
+.main-menu.menu-dark .navigation > li.open ul li > a {
+    padding-left: 45px !important;
+}
+
+.navbar-semi-dark .navbar-header, footer.footer-dark {
+    background: #00b5b8 !important;
+}
+
+footer a {
+    color: #6f42c1;
+}
+
+.avatar img {
+    height: 32px !important;
+}
+
+/*
+    Responsive CSS
+ */
+
+@media screen and (max-width: 640px) {
+    .dt-buttons.btn-group {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 70%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    form.form-horizontal .form-group .label-control {
+        text-align: left !important;
+    }
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #00b5b8 !important;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: 1px solid #00b5b8 !important;
+}
+
+.select2-container--classic.select2-container--focus .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: #00b5b8 !important;
+}
+.ck-editor__editable
+{
+ min-height: 300px !important;
+}
+
+.has-error .form-control, .has-error .border-primary {
+    border-color: #ff5b5b !important;
+    box-shadow: none !important;
+}
+
+
+address .table th, address .table td {
+     border-bottom: none;
+}
+
+.dataTable > thead > tr > th[class*=sort]:after {
+    display: none;
+}
+
+.dataTable > thead > tr > th[class*=sort]:before {
+    display: none;
+}
+
+table.dataTable thead th.select-checkbox {
+    position: relative !important;
+}
+
+table.dataTable thead th.select-checkbox:before {
+    content: ' ';
+    margin-top: -6px;
+    margin-left: -6px;
+    border: 1px solid #000 !important;
+    border-radius: 3px;
+}
+
+table.dataTable thead th.select-checkbox:before, table.dataTable thead th.select-checkbox:after {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+}
+
+/*table.dataTable tbody td.select-checkbox:before, table.dataTable tbody td.select-checkbox:after, table.dataTable tbody th.select-checkbox:before, table.dataTable tbody th.select-checkbox:after {*/
+/*    top: unset !important;*/
+/*}*/
+
+table.dataTable tr th.select-checkbox.selected::after {
+    content: "✔" !important;
+    margin-top: -11px !important;
+    margin-left: -4px !important;
+    text-align: center !important;
+    text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px !important;
+}

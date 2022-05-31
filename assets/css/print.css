@@ -1,0 +1,88 @@
+/* =============
+   Print css
+============= */
+@media print {
+    .page-title-box, .header-navbar, .content-header-title, .topbar-left, .hidden-print, .breadcrumb, .page-title, .footer, .main-menu, .topbar {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .content-header .mb-2 {
+        margin-bottom: unset !important;
+    }
+    html body{
+        font-size:15px;
+        color: #000 !important;
+        background-color: #fff;
+    }
+    .table {
+        color: #000 !important;
+    }
+    .left, .right-bar {
+        display: none;
+    }
+    .content {
+        margin-top: 0 !important;
+        padding-top: 0;
+        margin-left: 0 !important;
+    }
+    .body-content, .content-body {
+        margin-top: 0 !important;
+        padding-top: 0;
+    }
+    .body-content, .content-body {
+        padding: 0 !important;
+    }
+
+    .content-page, .content-body, .body-content {
+        margin-left: 0 !important;
+        margin-top: 0;
+    }
+    h1, h2, h3, h4, .logo {
+        color: #000 !important;
+    }
+
+    /*.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th,*/
+    /*.table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td,*/
+    /*.table > thead > tr > th, .table-bordered {*/
+    /*  border-color: #000000 !important;*/
+    /*}*/
+
+    .table-bordered > thead > tr > th,
+    .table-bordered > tbody > tr > th,
+    .table-bordered > tfoot > tr > th,
+    .table-bordered > thead > tr > td,
+    .table-bordered > tbody > tr > td,
+    .table-bordered > tfoot > tr > td {
+      border-color: #000000 !important;
+    }
+
+    .table-bordered {
+      border-color: #000000 !important;
+    }
+
+    .table-borderless {
+        color: #000 !important;
+    }
+
+    html body.fixed-navbar {
+        padding-top: 0 !important;
+    }
+
+    .report_print {
+        color:red;font-size:13pt !important;
+        font-weight: 900 !important;
+    }
+
+    .only-print {
+        display:block !important;
+    }
+
+    .remark-status {
+        color : #800000 !important;
+    }
+
+    .card-box {
+        padding: 0 !important;
+    }
+}
